@@ -3001,6 +3001,11 @@ function BeeSwarmSimulator(DATA){
             
             u:0,v:0,meshPartId:0,gatherSpeed:4,gatherAmount:10,speed:14,convertSpeed:4,convertAmount:80,attack:1,energy:20,favoriteTreat:'sunflowerSeed',rarity:'common',color:'white',description:'An ordinary bee. Well rounded and hard working!',giftedHiveBonus:{oper:'*',stat:'redPollen,bluePollen,whitePollen',num:1.2}
         },
+
+       tuffbasic:{
+            
+            u:0,v:0,meshPartId:0,gatherSpeed:10,gatherAmount:10,speed:14,convertSpeed:90,convertAmount:500,attack:5,tokens:['focus','tornado','targetPractice','link','summonFrog,'],attackTokens:['impale','focus','link','tornado','targetPractice'],energy:9999,favoriteTreat:'sunflowerSeed',rarity:'mythic',color:'white',description:'Basic Bees father, showing all the bees how gathering is really done.',giftedHiveBonus:{oper:'*',stat:'redPollen,bluePollen,whitePollen',num:5}
+        },
         
         looker:{
             
@@ -3252,7 +3257,7 @@ function BeeSwarmSimulator(DATA){
 
         vicious:{
             
-            u:128*9/2048,v:256*2/2048,meshPartId:15,gatherSpeed:4,gatherAmount:10,speed:17.5,convertSpeed:4,convertAmount:80,attack:8,energy:50,tokens:['blueBomb_'],attackTokens:['impale'],rarity:'event',color:'blue',description:"This cold-blooded bee takes great pleasure in inflicting pain.",giftedHiveBonus:{oper:'*',stat:'monsterRespawnRate',num:1.15}
+            u:128*9/2048,v:256*2/2048,meshPartId:15,gatherSpeed:4,gatherAmount:10,speed:17.5,convertSpeed:4,convertAmount:80,attack:8,energy:50,tokens:['blueBomb_'],attackTokens:['impale'],rarity:'event',color:'blue',description:"This cold-blooded bee takes great pleasure in inflicting pain. The GOAT",giftedHiveBonus:{oper:'*',stat:'monsterRespawnRate',num:1.5}
         },
 
         bear:{
