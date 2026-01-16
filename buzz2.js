@@ -1717,9 +1717,9 @@ function BeeSwarmSimulator(DATA){
 
             isMachine:true,requirements:function(player){
 
-                if(items.ticket.amount<6) return "You need 0 tickets to buy 41 Royal Jelly (not a scam anymore)"
+                if(items.ticket.amount<0) return "You need 0 tickets to buy 41 Royal Jelly (not a scam anymore)"
 
-            },minX:-29.5,maxX:-21.5,minY:0.5,maxY:3.5,minZ:7.75,maxZ:11.75,message:'Use Royal Jelly Dispenser (6 Tickets)',func:function(player){
+            },minX:-29.5,maxX:-21.5,minY:0.5,maxY:3.5,minZ:7.75,maxZ:11.75,message:'Use Royal Jelly Dispenser Gracias Onett (0Tickets)',func:function(player){
 
                 items.royalJelly.amount+=41
                 items.ticket.amount-=0
@@ -28345,26 +28345,26 @@ function BeeSwarmSimulator(DATA){
                 cost:['0 ticket'],
                 desc:'Can be fed to any bee to make it gifted!<br><br>It\s best to use Star Treats on event bees as it\'s the only way to make them gifted.'
             },{
-                amountPurchased:0,maxPurchasedAmount:1,
+                amountPurchased:0,maxPurchasedAmount:99999999,
                 name:'puppyBeeEgg',
                 slot:'item',
                 viewMatrix:[28.25+2,4,-21.25,-MATH.HALF_PI,-0.2],
-                cost:['5555 ticket'],
+                cost:['10 ticket'],
                 desc:"This bee loves to play! It helps with bee bonding and will sometimes reward you treats by playing fetch!<br><br>(Honestly even with the buff in this version you still shouldn't buy it, it's rlly bad)"
             },{
-                amountPurchased:0,maxPurchasedAmount:1,
+                amountPurchased:0,maxPurchasedAmount:9999999,
                 name:'photonBeeEgg',
                 slot:'item',
                 viewMatrix:[28.25+2,4,-23.25,-MATH.HALF_PI,-0.2],
                 cost:['10 ticket'],
                 desc:'An entity made of pure light! Fires beams from the sky to collect massive amounts of pollen at once. not free'
             },{
-                amountPurchased:0,maxPurchasedAmount:1,
+                amountPurchased:0,maxPurchasedAmount:99999999,
                 name:'tabbyBeeEgg',
                 slot:'item',
                 viewMatrix:[33.75-2,4,-23.25,MATH.HALF_PI,-0.2],
                 cost:['0 ticket'],
-                desc:'An affectionate bee who becomes a harder worker as it warms up to you. Free'
+                desc:'An affectionate bee who becomes a harder worker as it warms up to you. Free and inf eggs lol'
             },{
                 amountPurchased:0,maxPurchasedAmount:1,
                 name:'festiveBeeEgg',
@@ -28373,18 +28373,18 @@ function BeeSwarmSimulator(DATA){
                 cost:['0 ticket'],
                 desc:'A generous bee who spreads the joy of Beesmas by occasionally hands out random gifts to you! Free since its the jolliest season'
             },{
-                amountPurchased:0,maxPurchasedAmount:1,
+                amountPurchased:0,maxPurchasedAmount:9999999,
                 name:'crimsonBeeEgg',
                 slot:'item',
                 viewMatrix:[33.75-2,4,-19.25,MATH.HALF_PI,-0.2],
-                cost:['75 ticket'],
+                cost:['0 ticket'],
                 desc:'Defender of all things red! Excels in hives with many red bees. Has enhanced abilities when working with Cobalt Bee.'
             },{
-                amountPurchased:0,maxPurchasedAmount:1,
+                amountPurchased:0,maxPurchasedAmount:99999999999,
                 name:'cobaltBeeEgg',
                 slot:'item',
                 viewMatrix:[33.75-2,4,-17.25,MATH.HALF_PI,-0.2],
-                cost:['75 ticket'],
+                cost:['0 ticket'],
                 desc:'Defender of all things blue! Excels in hives with many blue bees. Has enhanced abilities when working with Crimson Bee.'
             }],
             currentIndex:0,message:'Explore Ticket Tent'
