@@ -21382,7 +21382,7 @@ function BeeSwarmSimulator(DATA){
         shovel:{
             
             collectPattern:[[0,0],[0,-1]],
-            collectAmount:2,
+            collectAmount:10,
             cooldown:0.8,
             mesh:function(box,cylinder,sphere,star){
                 
@@ -21396,7 +21396,7 @@ function BeeSwarmSimulator(DATA){
         rake:{
             
             collectPattern:[[0,0],[0,-1],[0,-2]],
-            collectAmount:2,
+            collectAmount:15,
             cooldown:0.7,
             mesh:function(box,cylinder,sphere,star){
                 
@@ -21407,7 +21407,7 @@ function BeeSwarmSimulator(DATA){
                 box(-0.3-0.2,0,0.6+0.5,0.1,0.1,0.5,[0,-40,0],[0.4,0.4,0.4])
                 box(-0.3,0,0.6+0.65,0.1,0.1,0.4,false,[0.4,0.4,0.4])
             },
-            desc:'A small gardening rake.<br><br>Collects 2 pollen from 3 flowers every 0.7s.',
+            desc:'A small gardening rake.<br><br>Collects 15 pollen from 3 flowers every 0.7s.',
             cost:['800 honey']
         },
 
@@ -21415,7 +21415,7 @@ function BeeSwarmSimulator(DATA){
             
             collectPattern:[[0,0]],
             collectAmount:9,
-            cooldown:0.6,
+            cooldown:0.1,
             mesh:function(box,cylinder,sphere,star){
                 
                 box(-0.2-0.15,-0.15,0.4,0.25,0.25,0.1,[0,0,-30],[1.3,1.3,0])
@@ -21423,15 +21423,15 @@ function BeeSwarmSimulator(DATA){
                 box(-0.2+0.15-Math.sin(30*MATH.TO_RAD)*0.41,-0.15+Math.cos(30*MATH.TO_RAD)*0.41,0.4,0.1,0.6,0.1,[0,0,30],[1.3,1.3,1.3])
                 box(-0.2-0.15+Math.sin(30*MATH.TO_RAD)*0.41,-0.15+Math.cos(30*MATH.TO_RAD)*0.41,0.4,0.1,0.6,0.1,[0,0,-30],[1.3,1.3,1.3])
             },
-            desc:'A little pair of yellow clippers.<br><br>Collects 9 pollen from 1 flowers every 0.6s.',
+            desc:'A little pair of yellow clippers.<br><br>Collects 9 pollen from 1 flowers every 0.1s.',
             cost:['2200 honey']
         },
 
         magnet:{
             
             collectPattern:[[0,0],[0,-1],[0,1],[-1,0],[1,0],[1,1],[1,-1],[-1,1],[-1,-1]],
-            collectAmount:2,
-            cooldown:0.8,
+            collectAmount:25,
+            cooldown:0.6,
             mesh:function(box,cylinder,sphere,star){
                 
                 box(-0.3,-0.25,0.5,0.2,0.6,0.2,false,[0.8,0.8,0.8])
@@ -21441,14 +21441,14 @@ function BeeSwarmSimulator(DATA){
                 box(-0.3-0.3,0.5,0.5,0.19,0.5,0.19,false,[1,1,1])
                 box(-0.3+0.3,0.5,0.5,0.19,0.5,0.19,false,[1,1,1])
             },
-            desc:'A big magnet that somehow picks up pollen particles.<br><br>Collects 2 pollen from 9 flowers every 0.8s.',
+            desc:'A big magnet that somehow picks up pollen particles.<br><br>Collects 25 pollen from 9 flowers every 0.6s.',
             cost:['5500 honey']
         },
 
         vacuum:{
             
             collectPattern:[[0,0],[0,-1],[0,1],[-1,0],[1,0],[1,1],[1,-1],[-1,1],[-1,-1],[0,-2],[2,0],[0,2],[-2,0]],
-            collectAmount:2,
+            collectAmount:30,
             cooldown:0.8,
             mesh:function(box,cylinder,sphere,star){
                 
@@ -21458,14 +21458,14 @@ function BeeSwarmSimulator(DATA){
                 box(-0.3-0.1,-0.3,0.7,0.075,0.075,0.31,false,[1.4,1.4,0])
                 box(-0.3+0.1,-0.3,0.7,0.075,0.075,0.31,false,[1.4,1.4,0])
             },
-            desc:'A handy house-hold vacuum cleaner.<br><br>Collects 2 pollen from 13 flowers every 0.8s.',
+            desc:'A handy house-hold vacuum cleaner.<br><br>Collects 30 pollen from 13 flowers every 0.8s.',
             cost:['14000 honey']
         },
 
         superScooper:{
             
             collectPattern:[[0,0],[0,-1],[0,-2],[0,-3],[0,-4]],
-            collectAmount:4,
+            collectAmount:40,
             cooldown:0.5,
             mesh:function(box,cylinder,sphere,star){
                 
@@ -21477,14 +21477,14 @@ function BeeSwarmSimulator(DATA){
                 box(-0.3+0.3*0.5,0,1.55,0.3,0.175,0.65,false,[1.5,1.5,0])
                 box(-0.3-0.3*0.5,0,1.55,0.3,0.175,0.65,false,[0,0,1.5])
             },
-            desc:'A massive toy scooper useful for pollen collection.<br><br>Collects 4 pollen from 5 flowers every 0.5s.',
+            desc:'A massive toy scooper useful for pollen collection.<br><br>Collects 40 pollen from 5 flowers every 0.5s.',
             cost:['40000 honey']
         },
 
         pulsar:{
             
             collectPattern:[[0,0],[0,-1],[0,1],[-1,0],[1,0],[1,1],[1,-1],[-1,1],[-1,-1],[0,-2],[2,0],[0,2],[-2,0],[-2,-1],[-2,1],[2,-1],[2,1],[-1,-2],[-1,2],[1,-2],[1,2],[0,-3],[0,3],[-3,0],[3,0],[-2,2],[2,2],[-2,-2],[2,-2]],
-            collectAmount:2,
+            collectAmount:20,
             cooldown:1,
             mesh:function(box,cylinder,sphere,star){
                 
@@ -21512,14 +21512,14 @@ function BeeSwarmSimulator(DATA){
                 
                 ParticleRenderer.add({x:player.body.position.x+x,y:player.body.position.y+0.2+1.1*0.5+0.25,z:player.body.position.z+z,vx:MATH.random(-0.3,0.3),vy:(Math.random()-0.5)*0.5,vz:MATH.random(-0.3,0.3),grav:1.5,size:MATH.random(30,70),col:[0,1,0],life:1,rotVel:MATH.random(-3,3),alpha:2})
             },
-            desc:'A strange magical tool that sucks up more pollen.<br><br>Collects 2 pollen from 29 flowers every 1s.',
+            desc:'A strange magical tool that sucks up more pollen.<br><br>Collects 20 pollen from 29 flowers every 1s.',
             cost:['125000 honey']
         },
 
         electroMagnet:{
             
             collectPattern:[[0,0],[0,-1],[0,1],[-1,0],[1,0],[1,1],[1,-1],[-1,1],[-1,-1]],
-            collectAmount:6,
+            collectAmount:67,
             cooldown:0.5,
             mesh:function(box,cylinder,sphere,star){
                 
@@ -21535,7 +21535,7 @@ function BeeSwarmSimulator(DATA){
                 box(-0.3,0.5+0.2,0.5-0.3,0.19,0.5,0.19,false,[1,1,1])
                 box(-0.3,0.5+0.2,0.5+0.3,0.19,0.5,0.19,false,[1,1,1])
             },
-            desc:'A upgraded magnet charged with electricity.<br><br>Collects 6 pollen from 9 flowers every 0.5s.',
+            desc:'A upgraded magnet charged with electricity.<br><br>Collects 67 pollen from 9 flowers every 0.5s.',
             cost:['300000 honey']
         },
         
@@ -21558,7 +21558,7 @@ function BeeSwarmSimulator(DATA){
         honeyDipper:{
             
             collectPattern:[[-4,0],[-3,-2],[-3,-1],[-3,0],[-3,1],[-3,2],[-2,-3],[-2,-2],[-2,-1],[-2,0],[-2,1],[-2,2],[-2,3],[-1,-3],[-1,-2],[-1,-1],[-1,0],[-1,1],[-1,2],[-1,3],[0,-4],[0,-3],[0,-2],[0,-1],[0,0],[0,1],[0,2],[0,3],[0,4],[1,-3],[1,-2],[1,-1],[1,0],[1,1],[1,2],[1,3],[2,-3],[2,-2],[2,-1],[2,0],[2,1],[2,2],[2,3],[3,-2],[3,-1],[3,0],[3,1],[3,2],[4,0]],
-            collectAmount:2,
+            collectAmount:35,
             cooldown:0.8,
             mesh:function(box,cylinder,sphere,star){
                 
@@ -21570,7 +21570,7 @@ function BeeSwarmSimulator(DATA){
                 cylinder(-0.3,0.25+1.2*0.5+0.501,0.4,0.3,-0.8,10,0.9,0.5,0.2,90,0,0)
 
             },
-            desc:'A giant honey dipper.<br><br>Collects 2 pollen from 49 flowers every 0.8s.',
+            desc:'A giant honey dipper.<br><br>Collects 35 pollen from 49 flowers every 0.8s.',
             cost:['1500000 honey']
         },
 
@@ -21609,7 +21609,7 @@ function BeeSwarmSimulator(DATA){
                     objects.bubbles.push(new Bubble(player.fieldIn,(Math.random()*fieldInfo[player.fieldIn].width)|0,(Math.random()*fieldInfo[player.fieldIn].length)|0))
                 }
             },
-            desc:'A bubble wand dipped in liquidy soap.<br><br>Collects 6 pollen from 16 flowers every 0.8s. Collects x2 more blue pollen.<br><br>Every 10th swing creates a bubble on the field.',
+            desc:'A bubble wand dipped in liquidy soap.<br><br>Collects 15 pollen from 16 flowers every 0.8s. Collects x2 more blue pollen.<br><br>Every 10th swing creates a bubble on the field.',
             cost:['2500000 honey']
         },
 
@@ -21670,7 +21670,7 @@ function BeeSwarmSimulator(DATA){
         goldenRake:{
             
             collectPattern:[[-3,0],[-3,-1],[-3,-2],[-3,-3],[3,0],[3,-1],[3,-2],[3,-3],[-1,0],[-1,-1],[-1,-2],[-1,-3],[1,0],[1,-1],[1,-2],[1,-3]],
-            collectAmount:7,
+            collectAmount:50,
             cooldown:0.75,
             mesh:function(box,cylinder,sphere,star){
                 
@@ -21688,14 +21688,14 @@ function BeeSwarmSimulator(DATA){
                     objects.mobs.push(new Scratch(null,player.flowerIn.x,player.flowerIn.z,true))
                 }
             },
-            desc:'A shiny golden rake with improved pollen collection.<br><br>Collects 7 pollen from 16 flowers every 0.75s.<br><br>Every 5th swing is supercharged and collects more flowers from longer lines.',
+            desc:'A shiny golden rake with improved pollen collection.<br><br>Collects 50 pollen from 16 flowers every 0.75s.<br><br>Every 5th swing is supercharged and collects more flowers from longer lines.',
             cost:['12500000 honey']
         },
 
         sparkStaff:{
             
             collectPattern:[[2,1],[-2,1],[0,-2]],
-            collectAmount:35,
+            collectAmount:150,
             cooldown:0.5,
             mesh:function(box,cylinder,sphere,star){
                 
@@ -21726,14 +21726,14 @@ function BeeSwarmSimulator(DATA){
                     a.splice(r,1)
                 }
             },
-            desc:'A wand powered by static electricity.<br><br>Collects 35 pollen from 3 random flowers every 0.5s.<br><br>Unlike in the real game, this tool is good :D',
+            desc:'A wand powered by static electricity. No longer useless<br><br>Collects 150 pollen from 3 random flowers every 0.5s.<br><br>Unlike in the real game, this tool is good :D',
             cost:['40000000 honey']
         },
 
         porcelainDipper:{
             
             collectPattern:[[-4,0],[-3,-2],[-3,-1],[-3,0],[-3,1],[-3,2],[-2,-3],[-2,-2],[-2,-1],[-2,0],[-2,1],[-2,2],[-2,3],[-1,-3],[-1,-2],[-1,-1],[-1,0],[-1,1],[-1,2],[-1,3],[0,-4],[0,-3],[0,-2],[0,-1],[0,0],[0,1],[0,2],[0,3],[0,4],[1,-3],[1,-2],[1,-1],[1,0],[1,1],[1,2],[1,3],[2,-3],[2,-2],[2,-1],[2,0],[2,1],[2,2],[2,3],[3,-2],[3,-1],[3,0],[3,1],[3,2],[4,0]],
-            collectAmount:{w:3*1.5,r:3,b:3},
+            collectAmount:{w:3*1.5,r:10,b:3},
             cooldown:0.7,
             mesh:function(box,cylinder,sphere,star){
                 
@@ -21777,7 +21777,7 @@ function BeeSwarmSimulator(DATA){
                     }
                 }
             },
-            desc:'A dipper drizzled with brittle liquid porcelain.<br><br>Collects 3 pollen from 49 flowers every 0.7s. Collects x1.5 more white pollen.<br><br>Every 10th swing summons a pillar of light that collects massive pollen.',
+            desc:'A dipper drizzled with brittle liquid porcelain.<br><br>Collects 10 pollen from 49 flowers every 0.7s. Collects x1.5 more white pollen.<br><br>Every 10th swing summons a pillar of light that collects massive pollen.',
             cost:['100000000 honey'],
 
         },
@@ -21785,7 +21785,7 @@ function BeeSwarmSimulator(DATA){
         petalWand:{
             
             collectPattern:[[0,0],[0,-1],[0,-2],[0,-3],[0,-4],[0,-5],[0,-6],[-1,-3],[-1,-4],[-1,-5],[1,-3],[1,-4],[1,-5],[0,1],[0,2],[0,3],[0,4],[0,5],[0,6],[-1,3],[-1,4],[-1,5],[1,3],[1,4],[1,5],[1,0],[2,0],[3,0],[4,0],[5,0],[6,0],[3,1],[4,1],[5,1],[3,-1],[4,-1],[5,-1],[-1,0],[-2,0],[-3,0],[-4,0],[-5,0],[-6,0],[-3,1],[-4,1],[-5,1],[-3,-1],[-4,-1],[-5,-1]],
-            collectAmount:10,
+            collectAmount:125,
             cooldown:0.7,
             mesh:function(box,cylinder,sphere,star){
                 
@@ -21833,14 +21833,14 @@ function BeeSwarmSimulator(DATA){
                 
                 ParticleRenderer.add({x:player.body.position.x+x,y:player.body.position.y+1.65,z:player.body.position.z+z,vx:MATH.random(-0.9,0.9),vy:Math.random()*0.5+0.2,vz:MATH.random(-0.9,0.9),grav:-1.5,size:MATH.random(20,50),col:[0.9,0.7,0.3],life:0.7,rotVel:MATH.random(-3,3),alpha:0.35})
             },
-            desc:'A luxurious flower with enchanted petals.<br><br>Collects 10 pollen from 49 flowers every 0.7s.<br><br>Every 3rd swing summons a flying petal shuriken that collects tokens and causes bees to convert pollen.',
+            desc:'A luxurious flower with enchanted petals.<br><br>Collects 125 pollen from 49 flowers every 0.7s.<br><br>Every 3rd swing summons a flying petal shuriken that collects tokens and causes bees to convert pollen.',
             cost:['1000000000 honey','5 starJelly','25 enzymes','25 glitter','1 spiritPetal']
         },
         
         darkScythe:{
             
             collectPattern:[[0,-3],[0,-4],[1,-5],[1,-4],[1,-3],[2,-5],[2,-4],[2,-3],[3,-3],[3,-5],[4,-1],[-1,-3],[-1,-4],[-2,-3],[-3,-3],[0,-5],[-1,-5],[-2,-4],[-4,-2],[3,-4],[4,-4],[2,-2],[3,-2],[-2,-2],[-3,-2],[-4,-1]],
-            collectAmount:13,
+            collectAmount:250,
             cooldown:0.575,
             mesh:function(box,cylinder,sphere,star){
                 
@@ -21919,15 +21919,15 @@ function BeeSwarmSimulator(DATA){
                 
                 ParticleRenderer.add({x:player.body.position.x+x,y:player.body.position.y+y,z:player.body.position.z+z,vx:-player.bodyDir[2]*2,vy:1.75,vz:player.bodyDir[0]*2,grav:0,size:MATH.random(70,120),col:[1,0,Math.random()],life:1,rotVel:MATH.random(-3,3),alpha:4.5})
             },
-            desc:'Swipe through flames to unlock their dark potential. Ensue dark chaos in fields and refuel burning flames, collecting more pollen and dealing more damage. Tend a destructive field of violet fire to enhance your Super-Crit power and Instant Red Conversion.',
+            desc:'Swipe through flames to unlock their dark potential. Ensue dark chaos in fields and refuel burning flames, collecting more pollen and dealing more damage. Embrace Red. Tend a destructive field of violet fire to enhance your Super-Crit power and Instant Red Conversion.',
             cost:['2500000000000 honey','1000 redExtract','200 stinger','50 hardWax','15 superSmoothie']
         },
         
         tidePopper:{
             
             collectPattern:[[0,0],[-1,0],[1,0],[-2,0],[2,0],[-1,-1],[0,-1],[1,-1],[-1,-2],[0,-2],[1,-2],[-1,-3],[0,-3],[1,-3],[-1,-4],[0,-4],[1,-4],[-1,-5],[0,-5],[1,-5],[0,-6],[0,-7],[0,-8]],
-            collectAmount:13,
-            cooldown:1,
+            collectAmount:750,
+            cooldown:0.75,
             mesh:function(box,cylinder,sphere,star,finalRotation){
                 
                 cylinder(-0.4,2.2,0.4,0.25,0.05,15,1,3,7,90,0,0,0.25)
@@ -21968,8 +21968,8 @@ function BeeSwarmSimulator(DATA){
                 ParticleRenderer.add({x:player.body.position.x+x,y:player.body.position.y+MATH.random(0.1,2.5),z:player.body.position.z+z,vx:x,vy:1.6,vz:z,grav:0,size:MATH.random(20,50),col:[0.1,0.7,1],life:0.7,rotVel:MATH.random(-3,3),alpha:0.5})
                 
             },
-            desc:'Pierce through flowers and bubbles with torriental waves, washing away tokens and converting pollen from bees. Swings faster and ramps up the more you pop, then unleashes tidal waves in a violent surge at 500 bubbles. Splash Balloons with tall waves to earn Tide Blessing and re-energize tidal waves with the destruction of bubbles.',
-            cost:['2500000000000 honey','1000 blueExtract','200 stinger','30 swirledWax','15 superSmoothie']
+            desc:'Pierce through flowers and bubbles with torriental waves, washing away tokens and converting pollen from bees. Embrace Blue. Swings faster and ramps up the more you pop, then unleashes tidal waves in a violent surge at 500 bubbles. Splash Balloons with tall waves to earn Tide Blessing and re-energize tidal waves with the destruction of bubbles.',
+            cost:['250000000000 honey','100 blueExtract','200 stinger','30 swirledWax','15 superSmoothie']
         },
         
         gummyBaller:{
