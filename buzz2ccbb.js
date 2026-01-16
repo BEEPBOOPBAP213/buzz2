@@ -1866,7 +1866,7 @@ function BeeSwarmSimulator(DATA){
                 if(!player.extraInfo.sproutSummoner)
                     player.extraInfo.sproutSummoner=1
 
-                if(Date.now()-player.extraInfo.sproutSummoner<2*60*60*1000){
+                if(Date.now()-player.player.extraInfo.sproutSummoner < 100){ 
 
                     return "The Sprout Summoner is on cooldown! ("+MATH.doTime((2*60*60-(Date.now()-player.extraInfo.sproutSummoner)*0.001)+'')+')'
                 }
