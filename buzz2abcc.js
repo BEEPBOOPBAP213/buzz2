@@ -3004,7 +3004,7 @@ function BeeSwarmSimulator(DATA){
 
        tuffbasic:{
             
-            u:0,v:0,meshPartId:0,gatherSpeed:10,gatherAmount:10,speed:14,convertSpeed:90,convertAmount:500,attack:5,tokens:['focus','tornado','targetPractice','link','summonFrog,'],attackTokens:['impale','focus','link','tornado','targetPractice'],energy:9999,favoriteTreat:'sunflowerSeed',rarity:'mythic',color:'white',description:'Basic Bees father, showing all the bees how gathering is really done.',giftedHiveBonus:{oper:'*',stat:'redPollen,bluePollen,whitePollen',num:5}
+            u:0,v:0,meshPartId:0,gatherSpeed:10,gatherAmount:10,speed:14,convertSpeed:90,convertAmount:500,attack:5,tokens:['focus','tornado','targetPractice','link','summonFrog'],attackTokens:['impale','focus','link','tornado','targetPractice'],energy:9999,favoriteTreat:'sunflowerSeed',rarity:'mythic',color:'white',description:'Basic Bees father, showing all the bees how gathering is really done.',giftedHiveBonus:{oper:'*',stat:'redPollen,bluePollen,whitePollen',num:5}
         },
         
         looker:{
